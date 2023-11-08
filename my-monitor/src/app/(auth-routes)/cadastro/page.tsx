@@ -3,7 +3,7 @@ import React from 'react'
 
 const page = () => {
   return (
-    <main className="items-center justify-center flex min-h-screen">
+    <main className="flex min-h-screen items-center justify-center">
       <Cadastro />
     </main>
   )
