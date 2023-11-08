@@ -1,7 +1,7 @@
 import { Input } from '@/components/ui/input'
 import { RadioGroupRegister } from '@/templates/cadastro/components'
 import { Button } from '@/components/ui/button'
-import { useLoginUser } from '@/hooks/useLoginUser'
+import { useLoginUser } from '@/hooks/useCadastroUser'
 import { useRouter } from 'next/navigation'
 
 const FormCadastro = () => {
