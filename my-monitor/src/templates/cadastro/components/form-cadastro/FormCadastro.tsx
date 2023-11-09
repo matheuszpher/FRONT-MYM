@@ -1,3 +1,5 @@
+'use client'
+
 import { Input } from '@/components/ui/input'
 import { RadioGroupRegister } from '@/templates/cadastro/components'
 import { Button } from '@/components/ui/button'
