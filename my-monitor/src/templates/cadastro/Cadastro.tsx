@@ -1,8 +1,6 @@
-'use client'
-
 import { FormCadastro } from '@/templates/cadastro/components'
 
-const Cadastro = () => {
+const Cadastro = async () => {
   return (
     <div>
       <h1>Cadastro</h1>
