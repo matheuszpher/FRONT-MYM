@@ -18,6 +18,7 @@ module.exports = {
     extend: {
       fontFamily: {
         coolvetica: ['coolvetica'],
+        inter: ['Inter'],
       },
       colors: {
         border: "hsl(var(--border))",
