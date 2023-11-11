@@ -4,7 +4,7 @@ import { zodResolver } from '@hookform/resolvers/zod'
 import axios from 'axios'
 import { useForm } from 'react-hook-form'
 
-export const useLoginUser = () => {
+export const useCadastroUser = () => {
   const {
     handleSubmit,
     register,

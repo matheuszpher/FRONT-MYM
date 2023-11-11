@@ -1,4 +1,4 @@
-import { FormCadastro } from '@/templates/cadastro/components'
+import { FormCadastro } from '@/components/cadastro'
 
 const Cadastro = async () => {
   return (
