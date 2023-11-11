@@ -1,4 +1,5 @@
 import { schemaFormCadastro } from '@/schema/schemaFormCadastro'
+import { schemaFormLogin } from '@/schema/schemaFormLogin'
 import { z } from 'zod'
 
 // NextAuth
@@ -13,3 +14,6 @@ export interface PrivateLayoutProps {
 
 // schemaRegister
 export type FormPropsCadastro = z.infer<typeof schemaFormCadastro>
+
+// schemaLogin
+export type FormLoginProps = z.infer<typeof schemaFormLogin>

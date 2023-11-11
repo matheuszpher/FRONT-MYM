@@ -1,13 +1,14 @@
 'use client'
 
 import { Input } from '@/components/ui/input'
-import { RadioGroupRegister } from '@/templates/cadastro/components'
+import { RadioGroupRegister } from '@/components/cadastro'
 import { Button } from '@/components/ui/button'
-import { useLoginUser } from '@/hooks/useCadastroUser'
+import { useCadastroUser } from '@/hooks/useCadastroUser'
 import { useRouter } from 'next/navigation'
 
 const FormCadastro = () => {
-  const { register, handleSubmit, errors, handleFormRegister } = useLoginUser()
+  const { register, handleSubmit, errors, handleFormRegister } =
+    useCadastroUser()
   const router = useRouter()
 
   const handleFormSubmit = handleSubmit(async (FormData) => {
