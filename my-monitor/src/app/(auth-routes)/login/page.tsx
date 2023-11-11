@@ -1,9 +1,9 @@
-import { Login } from '@/templates'
+import { Homepage } from '@/templates'
 
 const page = () => {
   return (
     <main className="flex min-h-screen items-center justify-center">
-      <Login />
+      <Homepage />
     </main>
   )
 }

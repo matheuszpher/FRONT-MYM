@@ -1,0 +1,7 @@
+export { default as HeaderHomepage } from './header/HeaderHomepage'
+export { default as MonitorIcon } from './icons/MonitorIcon'
+export { default as TeacherIcon } from './icons/TeacherIcon'
+export { default as StudentIcon } from './icons/StudentIcon'
+export { default as AsideHomePage } from './aside/AsideHomePage'
+export { default as PasswordIcon } from './icons/PasswordIcon'
+export { default as EmailIcon } from './icons/EmailIcon'
