@@ -4,8 +4,7 @@ export const schemaFormCadastro = z.object({
   credentials: z
     .object({
       usuario: z.string().refine((value) => /^[A-Za-z\s]+$/.test(value), {
-        message:
-          'O usuário deve conter apenas letras maiúsculas, letras minúsculas e espaços.',
+        message: 'Usuário invalido',
       }),
       email: z
         .string()
@@ -35,4 +34,5 @@ export const schemaFormCadastro = z.object({
       path: ['confirmarSenha'],
       message: 'As senhas não conferem',
     }),
+    token: z.string(),
 })
