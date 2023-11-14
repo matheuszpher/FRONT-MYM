@@ -1,6 +1,3 @@
-import { Cadastro } from '@/templates'
-import { HeaderHomepage } from '@/components/homepage'
-import { AsideHomePageCadastro } from '@/components/homepage'
 import { HomepageCadastro } from '@/templates'
 
 import React from 'react'

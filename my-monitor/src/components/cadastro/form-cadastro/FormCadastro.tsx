@@ -26,11 +26,10 @@ const FormCadastro = () => {
 
   const handleFormSubmit = handleSubmit(async (FormData) => {
     if (await handleFormRegister(FormData)) {
-      router.replace("/");
+      router.replace("/login");
     }
   });
   return (
-    <div className="flex flex-col items-center justify-center gap-5">
     <form
       onSubmit={handleFormSubmit}
       className="flex flex-col items-center justify-center gap-5"
@@ -40,7 +39,6 @@ const FormCadastro = () => {
           setShowAdditionalInput((prev) =>
             value === "monitor" ? !prev : prev,
           );
-          console.log("showAdditionalInput:", showAdditionalInput);
         }}
       />
 
@@ -115,11 +113,11 @@ const FormCadastro = () => {
       {showAdditionalInput && (
         <div className="mb-2 flex items-center justify-center gap-3">
           <TokenIcon />
-        <div
-          className={`relative flex flex-col items-center justify-center ${
-            showAdditionalInput ? 'h-auto' : 'h-0 overflow-hidden'
-          }`}
-        >
+          <div
+            className={`relative flex flex-col items-center justify-center ${
+              showAdditionalInput ? "h-auto" : "h-0 overflow-hidden"
+            }`}
+          >
             <Input
               type="text"
               placeholder="Token:"
@@ -130,23 +128,22 @@ const FormCadastro = () => {
           </div>
         </div>
       )}
-      </form>
-      <div className="mt-5  flex w-[60%] items-center justify-center gap-5 ">
+      <div className="mb-1 mt-5 flex w-[60%] items-center justify-center gap-5">
         <Button
           className="ml-7 h-auto w-full bg-emerald-600 font-light text-emerald-50 shadow-[6.0px_10.0px_10.0px_rgba(0,0,0,0.38)] transition-colors hover:bg-emerald-500 hover:shadow-[3.0px_6.0px_6.0px_rgba(0,0,0,0.38)]"
           type="submit"
         >
           Registrar
         </Button>
-        </div>
-        <p className="ml-6 relative mb-5 -top-2 text-center text-zinc-500 text-sm">
-          Já possui conta?{" "}
-          <Link className="text-zinc-500 hover:underline" href="/login">
-            Entre
-          </Link>
-        </p>
       </div>
-  );  
+      <p className="relative -top-2 mb-5 ml-6 text-center text-sm text-zinc-500">
+        Já possui conta?{" "}
+        <Link className="text-zinc-500 hover:underline" href="/login">
+          Entre
+        </Link>
+      </p>
+    </form>
+  );
 };
 
 export default FormCadastro;
