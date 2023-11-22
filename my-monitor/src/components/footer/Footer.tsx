@@ -1,11 +1,11 @@
 const Footer = () => {
-    return(
-        <footer className="flex justify-center items-center text-xs text-white h-[36px] w-[1440px]-full bg-slate-900 gap-10">
-            <button>Contrato do Usuário</button>
-            <button>Política de Privacidade</button>
-            <button>Política de Cookies</button>
-        </footer>
-    )
+  return (
+    <footer className="flex w-full items-center justify-center gap-10 bg-slate-900 py-2 text-xs text-white">
+      <span className="cursor-pointer">Contrato do Usuário</span>
+      <span className="cursor-pointer">Política de Privacidade</span>
+      <span className="cursor-pointer">Política de Cookies</span>
+    </footer>
+  )
 }
 
-export default Footer;
+export default Footer

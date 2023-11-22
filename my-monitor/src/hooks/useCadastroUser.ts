@@ -23,7 +23,7 @@ export const useCadastroUser = () => {
     },
   })
 
-  const registerURL = process.env.NEXT_PUBLIC_URL_REGISTER || ''
+  const registerURL = process.env.NEXT_PUBLIC_URL_REGISTER ?? ''
   const handleFormRegister = async (FormData: FormPropsCadastro) => {
     const data = {
       user: FormData.credentials.usuario,
