@@ -1,10 +1,10 @@
-import React from "react";
+import React from 'react'
 
 const TokenIcon = () => (
   <svg
-    width="29"
-    height="32"
-    viewBox="0 0 29 32"
+    width="34"
+    height="34"
+    viewBox="0 0 31 24"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
@@ -18,14 +18,14 @@ const TokenIcon = () => (
     <defs>
       <filter
         id="filter0_d_415_581"
-        x="-1"
+        x="0"
         y="0"
         width="32"
-        height="33"
+        height="34"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
           in="SourceAlpha"
           type="matrix"
@@ -53,6 +53,6 @@ const TokenIcon = () => (
       </filter>
     </defs>
   </svg>
-);
+)
 
-export default TokenIcon;
+export default TokenIcon
